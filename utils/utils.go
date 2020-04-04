@@ -184,8 +184,6 @@ func ToStringE(i interface{}) (string, error) {
 		return string(s), nil
 	case nil:
 		return "", nil
-	case ""
-		return "", nil
 	case fmt.Stringer:
 		return s.String(), nil
 	case error:
