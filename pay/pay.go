@@ -120,9 +120,12 @@ func (m *WePay) AppPayStruct(order AppUnifiedOrder) (results *AppPayRet, outTrad
 }
 
 // WaxPay 小程序支付
-func (m *WePay) WaxPay(totalFee int, openID string) (results *WaxPayRet, outTradeNo string, err error) {
+func (m *WePay) WaxPay(totalFee int, openID, tradeNo string) (results *WaxPayRet, outTradeNo string, err error) {
+	outTradeNo = tradeNo
+	if outTradeNo == "" {
+		outTradeNo = utils.GetTradeNO(m.MchID)
+	}
 
-	outTradeNo = utils.GetTradeNO(m.MchID)
 	wxaUnifiedOrder := &WxaUnifiedOrder{
 		UnifiedOrder: UnifiedOrder{
 			AppID:          m.AppID,
