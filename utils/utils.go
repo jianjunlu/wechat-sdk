@@ -20,7 +20,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/aimuz/wechat-sdk/common"
+	"github.com/jianjunlu/wechat-sdk/common"
 )
 
 // NewRequest 请求包装

@@ -5,7 +5,7 @@ import (
 
 	"encoding/xml"
 
-	"github.com/aimuz/wechat-sdk/utils"
+	"github.com/jianjunlu/wechat-sdk/utils"
 )
 
 type (

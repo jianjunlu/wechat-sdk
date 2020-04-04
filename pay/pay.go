@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/aimuz/wechat-sdk/utils"
+	"github.com/jianjunlu/wechat-sdk/utils"
 	"github.com/jinzhu/copier"
 )
 

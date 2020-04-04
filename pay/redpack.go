@@ -4,8 +4,8 @@ import (
 	"encoding/xml"
 	"fmt"
 
-	"github.com/aimuz/wechat-sdk/common"
-	"github.com/aimuz/wechat-sdk/utils"
+	"github.com/jianjunlu/wechat-sdk/common"
+	"github.com/jianjunlu/wechat-sdk/utils"
 )
 
 /*

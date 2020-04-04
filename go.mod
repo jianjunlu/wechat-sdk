@@ -1,4 +1,4 @@
-module github.com/aimuz/wechat-sdk
+module github.com/jianjunlu/wechat-sdk
 
 go 1.13
 
