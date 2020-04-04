@@ -27,7 +27,7 @@ type (
 
 	// UnifiedOrder 统一下单公共参数
 	UnifiedOrder struct {
-		XMLName        xml.Name `xml:"xml"`                                                //xml标签
+		XMLName        xml.Name `xml:"xml" json:"-"`                                       //xml标签
 		AppID          string   `xml:"appid" json:"appid"`                                 //Appid
 		MchID          string   `xml:"mch_id" json:"mch_id"`                               //微信支付分配的商户号，必须
 		DeviceInfo     string   `xml:"device_info" json:"device_info"`                     //微信支付填"WEB"，必须
